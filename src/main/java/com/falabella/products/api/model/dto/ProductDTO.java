@@ -27,7 +27,7 @@ public class ProductDTO implements Serializable{
 			@NotEmpty(message = "Name is required") @NotBlank String name,
 			@NotEmpty(message = "Brand is required") @NotBlank String brand, 
 			@NotBlank String size,
-			@NotEmpty(message = "Price is required") @NotBlank @Min(value = 1, message = "Amount must be more than 1") @Max(value = 99999999, message = "Amount must be less than 99999999") Long price,
+			@NotEmpty(message = "Price is required") @NotBlank @Min(value = 1, message = "Amount must be more than 1") @Max(value = 99999999, message = "Amount must be less than 99999999") double price,
 			@NotEmpty(message = "Image is required") @NotBlank String image, 
 			List<ProductImage> imageList) {
 		super();
@@ -38,6 +38,21 @@ public class ProductDTO implements Serializable{
 		this.price = price;
 		this.image = image;
 		this.imageList = imageList;
+	}
+
+	public ProductDTO(@NotEmpty(message = "SKU is required") String sku,
+			@NotEmpty(message = "Name is required") @NotBlank String name,
+			@NotEmpty(message = "Brand is required") @NotBlank String brand, 
+			@NotBlank String size,
+			@NotEmpty(message = "Price is required") @NotBlank @Min(value = 1, message = "Amount must be more than 1.00") @Max(value = 99999999, message = "Amount must be less than 99999999.00") double price,
+			@NotEmpty(message = "Image is required") @NotBlank String image) {
+		super();
+		this.sku = sku;
+		this.name = name;
+		this.brand = brand;
+		this.size = size;
+		this.price = price;
+		this.image = image;
 	}
 
 	@NotEmpty(message="SKU is required")
@@ -67,7 +82,7 @@ public class ProductDTO implements Serializable{
     @Max(value = 99999999, message = "Amount must be less than 99999999")
     @ApiModelProperty(notes = "Sell price", dataType = "Long", example= "399990.00", required = true, position = 5)
 	@Column(name = "price")
-	private Long price;
+	private double price;
 
 	@NotEmpty(message="Image is required")
 	@NotBlank
@@ -111,11 +126,11 @@ public class ProductDTO implements Serializable{
 		this.size = size;
 	}
 
-	public Long getPrice() {
+	public double getPrice() {
 		return price;
 	}
 
-	public void setPrice(Long price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
 

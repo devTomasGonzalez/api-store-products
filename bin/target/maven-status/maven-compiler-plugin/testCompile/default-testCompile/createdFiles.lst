@@ -1,1 +1,4 @@
-cl/overactive/apirewardcustomer/ApiRewardCustomerApplicationTests.class
+com/overactive/customer/api/controller/ProductControllerTest.class
+com/overactive/customer/api/service/ProductServiceTest.class
+com/overactive/customer/api/repository/ProductRepositoryTest.class
+com/overactive/customer/api/ApiRewardCustomerApplicationTests.class

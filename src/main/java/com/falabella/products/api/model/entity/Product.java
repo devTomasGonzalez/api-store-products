@@ -24,7 +24,7 @@ public class Product implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
-	public Product(String sku, String name, String brand, String size, Long price, String image,
+	public Product(String sku, String name, String brand, String size, double price, String image,
 			List<ProductImage> imageList, LocalDateTime createdAt, LocalDateTime updatedAt) {
 		super();
 		this.sku = sku;
@@ -65,7 +65,7 @@ public class Product implements Serializable{
 
 	private String size;
 	
-	private Long price;
+	private double price;
 
 	private String image;
 
@@ -117,11 +117,11 @@ public class Product implements Serializable{
 		this.size = size;
 	}
 
-	public Long getPrice() {
+	public double getPrice() {
 		return price;
 	}
 
-	public void setPrice(Long price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
 

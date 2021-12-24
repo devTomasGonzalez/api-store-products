@@ -39,8 +39,8 @@ public class ProductController {
 	@Autowired
     private IProductService productService;
 	
-//	public TransactionController(ITransactionService transactionService) {
-//        this.transactionService = transactionService;
+//	public ProductController(IProductService productService) {
+//        this.productService = productService;
 //    }
 	
 	@GetMapping(value = "/{sku}", produces = MediaType.APPLICATION_JSON_VALUE)

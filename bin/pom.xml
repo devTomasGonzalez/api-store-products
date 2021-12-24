@@ -9,18 +9,18 @@
 		<version>2.5.6</version>
 		<relativePath />
 	</parent>
-	<groupId>cl.overactive</groupId>
-	<artifactId>api-reward-customer</artifactId>
+	<groupId>com.falabella.products</groupId>
+	<artifactId>api-store-products</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>api-reward-customer</name>
-	<description>Api to offers a rewards program to its customers</description>
+	<name>api-store-products</name>
+	<description>Api to Manage the Stored Products</description>
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
+			<groupId>org.springframework.boot</groupId>
 		</dependency>
 
 		<dependency>
@@ -32,7 +32,26 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+			<exclusions>
+<!--
+ 				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+ -->
+			</exclusions>
 		</dependency>
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.springframework.boot</groupId> -->
+<!-- 			<artifactId>spring-boot-starter-security</artifactId> -->
+<!-- 		</dependency> -->
+		
+<!-- 		<dependency> -->
+<!-- 			<groupId>io.jsonwebtoken</groupId> -->
+<!-- 			<artifactId>jjwt</artifactId> -->
+<!-- 			<version>0.9.1</version> -->
+<!-- 		</dependency> -->
 
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -79,11 +98,18 @@
 			<optional>true</optional>
 		</dependency>
 
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.modelmapper</groupId> -->
+<!-- 			<artifactId>modelmapper</artifactId> -->
+<!-- 			<version>2.4.2</version> -->
+<!-- 		</dependency> -->
+		
 		<dependency>
-			<groupId>org.modelmapper</groupId>
-			<artifactId>modelmapper</artifactId>
-			<version>2.4.2</version>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.8.5</version>
 		</dependency>
+		
 	</dependencies>
 
 	<build>
@@ -92,6 +118,39 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+<!-- 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.19.1</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.junit.platform</groupId>
+						<artifactId>junit-platform-surefire-provider</artifactId>
+						<version>1.1.0</version>
+					</dependency>
+					<dependency>
+						<groupId>org.junit.jupiter</groupId>
+						<artifactId>junit-jupiter-engine</artifactId>
+						<version>5.1.0</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+ 			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>default-testCompile</id>
+						<phase>test-compile</phase>
+						<goals>
+							<goal>testCompile</goal>
+						</goals>
+						<configuration>
+							<failOnError>false</failOnError>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+-->			
 		</plugins>
 	</build>
 
