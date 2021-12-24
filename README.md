@@ -1,6 +1,6 @@
-# API Reward Customer
+# API Rest Products
 
-API Rest Java to Allow calculate the earning of points per month of a Customer.
+API Rest Java to Manage CRUD operations for Products.
 
 ## Starting 🚀
 
@@ -11,19 +11,19 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 
 ### Pre-requirements 📋
 
-- Java 8 JDK
+- Java 11 JDK
 - Maven 3.2+
 - Spring Tool Suite (STS)
 - 
 ### Install 🔧
 
-1. Download and unzip the source repository, or clone it using Git: git clone Vía HTTPS https://github.com/devTomasGonzalez/api-reward-customer.git or SSH git@github.com:devTomasGonzalez/api-reward-customer.git
+1. Download and unzip the source repository, or clone it using Git: git clone Vía HTTPS https://github.com/devTomasGonzalez/api-store-products.git or SSH git@github.com:devTomasGonzalez/api-store-products.git
 
 2. Move into project directory with 
-  - $cd api-reward-customer
+  - $cd api-store-products
   - $mvn install
   
-3. This project consider a embed H2 Database with initial data
+3. This project consider a embed H2 Database 
 
 ## Unit Testing
 
