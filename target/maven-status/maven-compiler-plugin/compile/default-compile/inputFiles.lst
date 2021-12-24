@@ -1,0 +1,16 @@
+/Users/macbook/Documents/workspace-spring-tool-suite-4-4.12.1.RELEASE/api-store-products/src/main/java/com/falabella/products/api/repository/ProductRepository.java
+/Users/macbook/Documents/workspace-spring-tool-suite-4-4.12.1.RELEASE/api-store-products/src/main/java/com/falabella/products/api/model/dto/ProductDTO.java
+/Users/macbook/Documents/workspace-spring-tool-suite-4-4.12.1.RELEASE/api-store-products/src/main/java/com/falabella/products/api/model/entity/Product.java
+/Users/macbook/Documents/workspace-spring-tool-suite-4-4.12.1.RELEASE/api-store-products/src/main/java/com/falabella/products/api/exceptions/BadRequestException.java
+/Users/macbook/Documents/workspace-spring-tool-suite-4-4.12.1.RELEASE/api-store-products/src/main/java/com/falabella/products/api/model/entity/ProductImage.java
+/Users/macbook/Documents/workspace-spring-tool-suite-4-4.12.1.RELEASE/api-store-products/src/main/java/com/falabella/products/api/exceptions/SkuExistException.java
+/Users/macbook/Documents/workspace-spring-tool-suite-4-4.12.1.RELEASE/api-store-products/src/main/java/com/falabella/products/api/exceptions/ValidBodyException.java
+/Users/macbook/Documents/workspace-spring-tool-suite-4-4.12.1.RELEASE/api-store-products/src/main/java/com/falabella/products/api/service/IProductService.java
+/Users/macbook/Documents/workspace-spring-tool-suite-4-4.12.1.RELEASE/api-store-products/src/main/java/com/falabella/products/api/exceptions/ExceptionResponse.java
+/Users/macbook/Documents/workspace-spring-tool-suite-4-4.12.1.RELEASE/api-store-products/src/main/java/com/falabella/products/api/exceptions/NotFoundException.java
+/Users/macbook/Documents/workspace-spring-tool-suite-4-4.12.1.RELEASE/api-store-products/src/main/java/com/falabella/products/api/exceptions/GlobalExceptionHandler.java
+/Users/macbook/Documents/workspace-spring-tool-suite-4-4.12.1.RELEASE/api-store-products/src/main/java/com/falabella/products/api/config/SwaggerConfig.java
+/Users/macbook/Documents/workspace-spring-tool-suite-4-4.12.1.RELEASE/api-store-products/src/main/java/com/falabella/products/api/ApiStoreProductsApplication.java
+/Users/macbook/Documents/workspace-spring-tool-suite-4-4.12.1.RELEASE/api-store-products/src/main/java/com/falabella/products/api/service/ProductServiceImpl.java
+/Users/macbook/Documents/workspace-spring-tool-suite-4-4.12.1.RELEASE/api-store-products/src/main/java/com/falabella/products/api/config/MapperConfig.java
+/Users/macbook/Documents/workspace-spring-tool-suite-4-4.12.1.RELEASE/api-store-products/src/main/java/com/falabella/products/api/controller/ProductController.java
